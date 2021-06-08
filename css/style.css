@@ -1,0 +1,120 @@
+:root {
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+ /*Base*/
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .logo {
+     margin-left: 5px;
+     color: var(--vermelho);
+     letter-spacing: 3px;
+     font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+ }
+
+ header nav a {
+     text-decoration: none;
+     color: #AAA;
+     margin-right: 20px;
+     padding: 10px;
+     border: 1px solid transparent;
+
+ }
+
+ header nav a:hover {
+     color: #fff;
+ }
+
+ /*Filme Principal*/
+.filme_principal {
+    font-size: 16px;
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url(../imagens/background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.filme_principal .descricao {
+    margin-bottom: 1rem;
+}
+
+.filme_principal > .container{
+    width: 80%;
+}
+
+.title, .descricao img {
+    width: 0%;
+}
+
+.title, .descricao{
+    margin-left: 4%;
+    width: 50%;
+}
+
+.descricao {
+    margin-top: 20px;
+}
+
+.botao{
+    background-color: rgba(186, 186, 186, 0.042);
+    border: none;
+    color: white;
+
+    padding: 10px 30px;
+    margin-left: 25px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao:hover{
+    background-color:white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.descricao {
+    font-size: 20px;
+}
+
+
+/*Carrosel*/
+.box_filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel_filmes {
+    margin-top: 5px;
+}
